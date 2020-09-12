@@ -7,7 +7,11 @@ The USP of the project is bsically a voice-guided system which will include ever
 
 
 ## Back End 
-We are using an apache server on the backend that'll host the Web Applicaiton we have created [here][1]. This Website is a dashboard for the doctors as well as nurses to access the details of every ICU patient 
+We are using an apache server on the backend that'll host the [Web Applicaiton][2] we have created [here][1]. This Website is a dashboard for the doctors as well as nurses to access the details of every ICU patient on demand from our database. Acoording to different logins, the user will have the rights to READ  or  READ & WRITE the patient data in ICU. Each doctor as well as nurse will have a separate profile to manage their patient details.
+
+## Voice Recognition System
+Inside the ICU, it's not very efficient for a doctor to waste time writing records on notebooks using pen and paper. Moreover maintaining these records and documents becomes a highly tedious task after some time. We have shifted the entire system to **Voice Recognition**. The doctor/nurse comes inside the ICU, observes the patient and says those details instead of writing them. That voice is converted to text (using the **Google speech recognition API**), confirmed, processed and sent to the database for later access. 
 
 
 [1]: http://        "Github"
+[2]: http://        "SehatApplication"
