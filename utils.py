@@ -26,6 +26,7 @@ def recognize_speech_from_mic(recognizer, microphone):
     # from the microphone
     with microphone as source:
         recognizer.adjust_for_ambient_noise(source)
+        print("Caliberation done")
         audio = recognizer.listen(source)
 
     # set up the response object
