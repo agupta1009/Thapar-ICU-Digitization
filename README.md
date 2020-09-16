@@ -13,5 +13,5 @@ We are using an apache server on the backend that'll host the [Web Applicaiton][
 Inside the ICU, it's not very efficient for a doctor to waste time writing records on notebooks using pen and paper. Moreover maintaining these records and documents becomes a highly tedious task after some time. We have shifted the entire system to **Voice Recognition**. The doctor/nurse comes inside the ICU, observes the patient and says those details instead of writing them. That voice is converted to text (using the **Google speech recognition API**), confirmed, processed and sent to the database for later access. 
 
 
-[1]: http://        "Github"
-[2]: http://        "SehatApplication"
+[1]: https://github.com/anshgarg7/ICU_Project        "Github"
+[2]: https://codemonk-health.000webhostapp.com/        "SehatApplication"
