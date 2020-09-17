@@ -1,9 +1,6 @@
 import random
 import time
-
 import speech_recognition as sr
-
-
 def recognize_speech_from_mic(recognizer, microphone):
     """Transcribe speech from recorded from `microphone`.
     Returns a dictionary with three keys:
@@ -26,7 +23,6 @@ def recognize_speech_from_mic(recognizer, microphone):
     # from the microphone
     with microphone as source:
         recognizer.adjust_for_ambient_noise(source)
-        print("Caliberation done")
         audio = recognizer.listen(source)
 
     # set up the response object
@@ -49,4 +45,7 @@ def recognize_speech_from_mic(recognizer, microphone):
         # speech was unintelligible
         response["error"] = "Unable to recognize speech"
 
-    return response
+    if response["success"]==True:
+        return response["transcription"]
+    else:
+        return " "
