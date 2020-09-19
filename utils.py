@@ -57,5 +57,5 @@ def recognize_speech_from_mic(recognizer, microphone):
     recordTuple = return_tuple
     cursor.execute("INSERT INTO news (line, date, story, image) VALUES (%s,%s,%s,%s)",recordTuple)
     connection.commit()
-print(cursor.rowcount, "Record inserted successfully into Laptop table")
-cursor.close()
+    print(cursor.rowcount, "Record inserted successfully into Laptop table")
+    cursor.close()
