@@ -50,4 +50,12 @@ def recognize_speech_from_mic(recognizer, microphone):
         response["error"] = "Unable to recognize speech"
 
     return_tuple = (response["transcription"],response["success"],response["error"])
-    return return_tuple
+    #return return_tuple
+
+    connection = mysql.connector.connect(host='localhost',database='newstest',user='root',password='')
+    cursor = connection.cursor()
+    recordTuple = return_tuple
+    cursor.execute("INSERT INTO news (line, date, story, image) VALUES (%s,%s,%s,%s)",recordTuple)
+    connection.commit()
+print(cursor.rowcount, "Record inserted successfully into Laptop table")
+cursor.close()
