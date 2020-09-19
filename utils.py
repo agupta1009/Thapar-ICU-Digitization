@@ -49,4 +49,5 @@ def recognize_speech_from_mic(recognizer, microphone):
         # speech was unintelligible
         response["error"] = "Unable to recognize speech"
 
-    return response
+    return_tuple = (response["transcription"],response["success"],response["error"])
+    return return_tuple
