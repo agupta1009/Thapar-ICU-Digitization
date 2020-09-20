@@ -5,9 +5,11 @@ A team project in Thapar Univ. to create an ICU digitization system for a hospit
 
 The USP of the project is bsically a voice-guided system which will include everything from recording patient's conditions to something very specific like it's diet chart.
 
+**After Speach to Text conversion, We are using text summarization techniques to extract the useful information that the hospital wants to record by using keywords that are already stored to triger the extraction of corresponding values**
 
 ## Back End 
-We are using an apache server on the backend that'll host the [Web Applicaiton][2] we have created [here][1]. This Website is a dashboard for the doctors as well as nurses to access the details of every ICU patient on demand from our database. Acoording to different logins, the user will have the rights to READ  or  READ & WRITE the patient data in ICU. Each doctor as well as nurse will have a separate profile to manage their patient details.
+We have created a PHP based [Web Applicaiton][2] you can see [here][1] to control the whole process in the ICU. This WebApp is basically a dashboard for the doctors as well as nurses to access the details of every ICU patient on demand from our database. According to different logins, the user will have the rights to READ  or  READ & WRITE the patient data in ICU. Each doctor as well as nurse will have a separate profile to manage their patient details.
+
 ![webapp](https://github.com/AryanSethi/Thapar-ICU-Digitization/blob/master/assets/Screenshot%202020-09-16%20143426.png)
 
 ## Voice Recognition System
